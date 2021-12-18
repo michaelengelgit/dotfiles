@@ -32,4 +32,5 @@ main = do
        [
        ((mod4Mask, xK_f), spawn "brave"),
        ((mod4Mask, xK_x), spawn "xsecurelock")
+       ((mod4Mask, xK_k), spawn "keepassxc")
        ] 
