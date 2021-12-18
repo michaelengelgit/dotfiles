@@ -1,0 +1,14 @@
+#!/bin/bash
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root"
+   exit 1
+fi
+
+echo "Dotfiles Removal"
+
+arr=("alacritty" "bash" "nvim" "X11_home" "xmonad")
+for counter in ${!arr[*]}; do
+    stow -D ${arr[counter]}  
+done
+
+stow -D X11 -t /etc/X11/xorg.conf.d

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Dotfiles Installation"
+
+arr=("alacritty" "bash" "nvim" "X11_home" "xmonad")
+for counter in ${!arr[*]}; do
+    stow -D ${arr[counter]}  
+    stow  ${arr[counter]}  
+done
+
