@@ -6,6 +6,7 @@ M.search_dotfiles = function()
         prompt_title = "< Dotfiles >",
         cwd = "~/.dotfiles",
         hidden = true,
+        file_ignore_patterns= {".git"},
     })
 end
 
@@ -14,6 +15,7 @@ M.search_projects = function()
         prompt_title = "< Projects >",
         cwd = "~/dev/",
         hidden = true,
+        file_ignore_patterns= {".git"},
     })
 end
 
