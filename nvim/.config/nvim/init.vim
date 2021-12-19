@@ -5,10 +5,7 @@ cal plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'mbbill/undotree'
 Plug 'nvim-lua/plenary.nvim'
-
-
 Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 call plug#end()
