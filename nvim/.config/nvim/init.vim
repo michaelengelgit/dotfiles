@@ -37,14 +37,14 @@ lua require("telescope")
 " maps
 map <leader>h :wincmd h<CR>
 map <leader>l :wincmd l<CR>
-map <leader>qq :exit!<CR>
+map <leader>qq :q!<CR>
 map <leader>qs :wq<CR>
 map <leader>s :w<CR>
 
 map <leader>wn :wincmd v<CR>
 map <leader>wc :wincmd c<CR>
 
-"nnmapfjfka qqs
+"nnoremaps
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :Sex!<CR>
 
