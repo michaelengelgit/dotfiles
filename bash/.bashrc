@@ -21,7 +21,14 @@ alias rm="rm -i"
 alias cp="rsync -r --progress"
 alias vim="nvim"
 
+#GPG BS
+alias gpg="gpg --pinentry-mode loopback"
+alias gpg2="gpg2 --pinentry-mode loopback"
+
+
 PS1='[\u@\h \W]\$ '
+
+
 
 #custom functions
 function countdown(){
