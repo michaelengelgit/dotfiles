@@ -20,7 +20,7 @@ alias bb='curl eur.rate.sx'
 alias rm="rm -i"
 alias cp="rsync -r --progress"
 alias vim="nvim"
-
+alias sudo="doas"
 #GPG BS
 alias gpg="gpg --pinentry-mode loopback"
 alias gpg2="gpg2 --pinentry-mode loopback"
