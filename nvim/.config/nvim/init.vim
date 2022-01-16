@@ -32,6 +32,7 @@ set undodir=~/.vim/undodir
 set incsearch
 set scrolloff=8
 set relativenumber
+
 lua require("telescope")
 
 
@@ -46,13 +47,17 @@ map <leader>wn :wincmd v<CR>
 map <leader>wc :wincmd c<CR>
 
 "nnoremaps
-nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>pv :Sex!<CR>
 
+"Undotree
+nnoremap <leader>u :UndotreeShow<CR>
+
+"Telescope
+nnoremap <leader>fs :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
 nnoremap <leader>fw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 
 nnoremap <leader>pd :lua require('telescope').search_dotfiles()<CR>
+nnoremap <leader>pf :lua require('telescope').search_pprojects()<CR>
 nnoremap <leader>pp :lua require('telescope').search_projects()<CR>

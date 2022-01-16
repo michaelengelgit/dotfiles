@@ -19,4 +19,12 @@ M.search_projects = function()
     })
 end
 
+M.search_pprojects = function()
+    require("telescope.builtin").find_files({
+        prompt_title = "< ;/ >",
+        cwd = "~/.__p_dev/",
+        hidden = true,
+        file_ignore_patterns= {".git"},
+    })
+end
 return M
