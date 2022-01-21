@@ -14,8 +14,8 @@ export EDITOR="nvim"
 # ALIAS 
 alias ls='exa --color=always --group-directories-first'
 alias la='exa -al --color=always --group-directories-first'
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-alias update='sudo pacman -Syu'
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq) && yay -Rns $(yay -Qtdq)'
+alias update='sudo pacman -Syu && yay -Syu'
 alias bb='curl eur.rate.sx'
 alias rm="rm -i"
 alias cp="rsync -r --progress"
