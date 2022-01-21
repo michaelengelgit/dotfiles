@@ -4,7 +4,7 @@ import XMonad.Util.Run (spawnPipe)
 import Data.List
 
 myFont :: String
-myFont = "xft:SausceCodePro Nerd Font Mono:regular:size=9:antialais=true:hinting=true"
+myFont = "xft:Monolia Mono:regular:size=9:antialais=true:hinting=true"
 
 myTerminal :: String
 myTerminal = "alacritty"
