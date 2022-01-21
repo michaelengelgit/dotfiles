@@ -9,6 +9,8 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'ThePrimeagen/vim-be-good'
+Plug 'joom/latex-unicoder.vim'
+
 call plug#end()
 
 " Set 
