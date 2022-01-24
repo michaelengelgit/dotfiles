@@ -12,3 +12,4 @@ for counter in ${!arr[*]}; do
 done
 
 stow -D X11 -t /etc/X11/xorg.conf.d
+stow -D doas -t /etc
