@@ -60,6 +60,8 @@ nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 
-nnoremap <leader>pd :lua require('telescope').search_dotfiles()<CR>
+nnoremap <leader>p. :lua require('telescope').search_dotfiles()<CR>
 nnoremap <leader>pf :lua require('telescope').search_pprojects()<CR>
 nnoremap <leader>pp :lua require('telescope').search_projects()<CR>
+nnoremap <leader>pd :lua require('telescope').search_docs()<CR>
+

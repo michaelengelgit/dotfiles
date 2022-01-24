@@ -27,4 +27,12 @@ M.search_pprojects = function()
         file_ignore_patterns= {".git"},
     })
 end
+M.search_docs = function()
+    require("telescope.builtin").find_files({
+        prompt_title = "< Documents >",
+        cwd = "~/docs/",
+        hidden = true,
+        file_ignore_patterns= {".git"},
+    })
+end
 return M
