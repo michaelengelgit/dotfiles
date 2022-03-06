@@ -795,5 +795,4 @@ window.opacity: 1.0
   #   - Trace
   #log_level: Warn
 
-  # Print all received window events.
   #print_events: false
