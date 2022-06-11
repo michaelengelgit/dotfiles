@@ -12,11 +12,11 @@ export EDITOR="nvim"
 
 
 # ALIAS 
-alias ls='exa --color=always --group-directories-first'
-alias la='exa -al --color=always --group-directories-first'
+alias ls='lsd'
+alias la='lsd -la'
 alias cleanup='doas pacman -Rns $(pacman -Qtdq) && doas yay -Rns $(yay -Qtdq)'
 
-alias update='doas pacman -Syu && doas yay -Syu'
+alias update='doas pacman -Syu && yay -Syu'
 alias bb='curl eur.rate.sx'
 alias rm="rm -i"
 alias cp="rsync -r --progress"
