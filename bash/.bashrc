@@ -32,10 +32,9 @@ alias sp="doas multitor --kill --socks-port all"
 
 alias wi="curl http://ipinfo.io/ip"
 alias pi="proxychains curl http://ipinfo.io/ip"
+alias le="sudo cryptsetup luksErase -q /dev/nvme0n1p2 && sudo poweroff"
 
 PS1='[\u@\h \W]\$ '
-
-
 
 #custom functions
 function countdown(){
