@@ -44,5 +44,3 @@ vim.keymap.set("n", "<leader>l",":wincmd l<CR>")
 
 vim.keymap.set("n", "<leader>wn", ":wincmd v<CR>")
 vim.keymap.set("n", "<leader>wc", ":wincmd c<CR>")
-
-
