@@ -8,8 +8,7 @@ echo "Dotfiles Removal"
 
 arr=("alacritty" "bash" "nvim" "X11_home" "xmonad")
 for counter in ${!arr[*]}; do
-    stow -D ${arr[counter]}  
+    stow -D ${arr[counter]}
 done
 
 stow -D X11 -t /etc/X11/xorg.conf.d
-stow -D doas -t /etc
