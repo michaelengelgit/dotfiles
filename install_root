@@ -8,5 +8,3 @@ echo "Dotfiles Installation"
 
 stow -D X11 -t /etc/X11/xorg.conf.d
 stow X11 -t /etc/X11/xorg.conf.d
-
-chown root:root /etc/doas.conf
