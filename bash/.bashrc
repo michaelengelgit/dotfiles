@@ -26,8 +26,8 @@ alias gpg="gpg --pinentry-mode loopback"
 alias gpg2="gpg2 --pinentry-mode loopback"
 
 #multitor
-alias tp="doas multitor --init 10 --user michael --socks-port 9000 --control-port 9900 --proxy privoxy --haproxy"
-alias sp="doas multitor --kill --socks-port all"
+alias tp="sudo multitor --init 10 --user michael --socks-port 9000 --control-port 9900 --proxy privoxy --haproxy"
+alias sp="sudo multitor --kill --socks-port all"
 
 #curls
 alias wi="curl http://ipinfo.io/ip"
@@ -35,7 +35,7 @@ alias pi="proxychains curl http://ipinfo.io/ip"
 alias bb='curl eur.rate.sx'
 
 #customs
-alias le="sudo cryptsetup luksErase -q /dev/nvme0n1p2 && sudo poweroff"
+alias iwantdelte="sudo cryptsetup luksErase -q /dev/nvme0n1p2 && sudo poweroff"
 
 PS1='[\u@\h \W]\$ '
 
