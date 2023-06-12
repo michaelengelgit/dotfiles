@@ -35,7 +35,7 @@ alias pi="proxychains curl http://ipinfo.io/ip"
 alias bb='curl eur.rate.sx'
 
 #customs
-alias iwantdelte="sudo cryptsetup luksErase -q /dev/nvme0n1p2 && sudo poweroff"
+alias iwantdelte="isudo cryptsetup luksErase -q /dev/nvme0n1p2 && sudo poweroff"
 
 PS1='[\u@\h \W]\$ '
 
@@ -55,3 +55,5 @@ function stopwatch(){
     sleep 0.1
    done
 }
+
+[ -f "/home/michael/.ghcup/env" ] && source "/home/michael/.ghcup/env" # ghcup-env
