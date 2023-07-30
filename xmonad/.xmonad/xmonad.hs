@@ -30,7 +30,8 @@ main = do
        normalBorderColor = myDefCol
       } `additionalKeys`
        [
-       ((mod4Mask, xK_f), spawn "brave"),
+       ((mod4Mask, xK_f), spawn "firejail brave"),
        ((mod4Mask, xK_x), spawn "xsecurelock"),
-       ((mod4Mask, xK_m), spawn "thunderbird")
+       ((mod4Mask, xK_m), spawn "firejail thunderbird"),
+       ((mod4Mask, xK_n), spawn "firejail rssguard")
        ]
