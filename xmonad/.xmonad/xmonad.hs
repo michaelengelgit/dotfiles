@@ -33,5 +33,6 @@ main = do
        ((mod4Mask, xK_f), spawn "firejail brave"),
        ((mod4Mask, xK_x), spawn "xsecurelock"),
        ((mod4Mask, xK_m), spawn "firejail thunderbird"),
-       ((mod4Mask, xK_n), spawn "fluent_reader")
+       ((mod4Mask, xK_n), spawn "fluent_reader"),
+       ((mod4Mask, xK_t), spawn "firejail Telegram")
        ]
