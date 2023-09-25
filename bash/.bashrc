@@ -32,7 +32,7 @@ alias sp="sudo multitor --kill --socks-port all"
 #curls
 alias wi="curl http://ipinfo.io/ip"
 alias pi="proxychains curl http://ipinfo.io/ip"
-alias bb='curl eur.rate.sx'
+alias bb='curl rate.sx'
 
 #customs
 alias iwantdelte="isudo cryptsetup luksErase -q /dev/nvme0n1p2 && sudo poweroff"
